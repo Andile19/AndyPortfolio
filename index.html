@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquerie.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Andile Motha</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Andile Motha</div>
+        <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="togglemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">      
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+        </div>
+        </div>   
+        </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Assets/profile pic.jpeg" alt="Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Andile Motha</h1>
+            <p class="section__text__p1">Software Developement Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/Andile Motha CV WTB FIELD STO.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+                </button>
+            </div>
+            <div id="socials.container">
+                <img src="./Assets/linkedin-with-circle-icon-2048x2048-np6yltn1.png" alt="My linkedin Profile" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/andile-motha-18482b65/'">
+
+    
+                <img src="./Assets/git.png" alt="My Github Profile" 
+                class="icon" onclick="location.href='https://github.com/Andile19'">
+
+            </div>
+        </div>
+
+    
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!--<div class="section__pic-container">
+                <img 
+                src="./Assets/About Pic.jpeg" 
+                alt="Profile Picture" 
+                class="about-pic"/>
+            </div>-->
+            <div class="about-details-container">
+                <div class="about-container">
+                <div class="details-container">
+                <img 
+                src="./Assets/experience.png" 
+                alt="Experience Icon" 
+                class="icon"/>
+                <h3>Experience</h3>
+                <p>2+ years <br /> NOC Engineering</p>
+                </div>
+                <div class="details-container">
+                    <img 
+                    src="./Assets/education.png"
+                    alt="Education Icon"
+                    class="icon"/>
+                    <h3>Education</h3>
+                    <p>NDIP Electrical Engineering </p> 
+                </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                    I am a passionate and driven individual with a strong interest in software development. I have a background in Electrical Engineering, which has provided me with a solid foundation in problem-solving and analytical thinking. I am currently pursuing my studies in software development, where I am honing my skills in programming languages, web development, and software design principles. I am eager to apply my knowledge and creativity to real-world projects and contribute to innovative solutions in the tech industry.
+                    I am a quick learner and thrive in collaborative environments, where I can work with others to achieve common goals. I am excited about the opportunities that lie ahead and look forward to making a positive impact in the field of software development.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--<img src="./Assets/arrow.jpg" 
+        alt="Arrow Icon" 
+        class="Icon Arrow" 
+        onclick="location.href='#experience'"
+        />-->
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p> 
+      <h1 class="title">Experience</h1> 
+      <div class="experience-details-container">
+        <div class="about-container">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Technical skills & Technologies</h2> 
+                <div class="article-container"></div>
+            </div>
+            <div class="details-container">
+                <article>
+                <img 
+                src="./Assets/check.jpg"
+                alt="Experience Icon"
+                class="icon"/>
+                <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p> 
+                </div>
+                </article>
+                <article>
+                <img 
+                src="./Assets/check.jpg"
+                alt="Experience Icon"
+                class="icon"/>
+                <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p> 
+                </div>
+                </article>
+                <article>
+                <img 
+                src="./Assets/check.jpg"
+                alt="Experience Icon"
+                class="icon"/>
+                <div>
+                <h3>Python</h3>
+                <p>Intermediate</p> 
+                </div>
+                </article>
+                <article>
+                <img 
+                src="./Assets/check.jpg"
+                alt="Experience Icon"
+                class="icon"/>
+                <div>
+                <h3>MySQL</h3>
+                <p>Intermediate</p> 
+                </div>
+                </article>
+                <article>
+                <img 
+                src="./Assets/check.jpg"
+                alt="Experience Icon"
+                class="icon"/>
+                <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p> 
+                </div>
+                </article>
+                <article>
+                <img 
+                src="./Assets/check.jpg"
+                alt="Experience Icon"
+                class="icon"/>
+                <div>
+                <h3>MSOfficeSuite</h3>
+                <p>Experienced</p> 
+                </div>
+                </article>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Explore My</p> 
+        <h1 class="title">Projects</h1> 
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+               <div class="article-container">
+                    <img 
+                    src="./Assets/project1.jpg"
+                    alt="Project 1"
+                    class="project-img"/>
+               </div>
+                        <h2 class="experience-sub-title project-title">Project 1</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Andile19'">
+                        Github
+                        </button>
+                    </div>
+             </div>     
+        </div>      
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./Assets/email.png" 
+                alt="Email icon" 
+                class="icon contact-icon"
+                />
+                <p><a href="mailto:andymotha@gmail.com">andymotha@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./Assets/linkedin-with-circle-icon-2048x2048-np6yltn1.png" 
+                alt="linkedin icon" 
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/andile-motha-18482b65/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Andile Motha. All rights reserved.</p>
+    <script src="script.js"></script>
+</body>
+</html>
