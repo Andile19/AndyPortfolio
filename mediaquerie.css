@@ -1,3 +1,4 @@
+/* Tablets and smaller desktops */
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
@@ -5,23 +6,100 @@
     #hamburger-nav {
         display: flex;
     }
-    .container {
-        width: 100%;
-        padding: 0 20px;
+    section {
+        margin: 5rem 2rem;
     }
-    .header, .footer {
-        text-align: center;
+    #profile {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
     }
-    .nav {
-        display: block;
+    .section__pic-container {
         margin: 0 auto;
     }
-    .nav a {
-        display: block;
-        margin: 10px 0;
+    .section-container {
+        flex-direction: column;
     }
-    .content {
-        font-size: 16px;
-    }        
-    
+    #socials-container {
+        justify-content: center;
+    }
+}
+
+/* Medium-sized devices */
+@media screen and (max-width: 768px) {
+    section {
+        margin: 2rem 1rem;
+        height: auto;
+        padding: 2rem 0;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .contact-info-upper-container {
+        flex-direction: column;
+    }
+    .experience-details-container {
+        margin-top: 1rem;
+    }
+    .details-container {
+        margin: 0.5rem;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .section__pic-container img {
+        max-width: 100%;
+        height: auto;
+    }
+    .article-container {
+        gap: 1rem;
+    }
+    footer {
+        height: auto;
+        padding: 2rem 0;
+    }
+    footer nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Small-sized devices */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 80%;
+        max-width: 250px;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .about-container {
+        gap: 1rem;
+    }
+    .details-container {
+        padding: 1rem;
+    }
+    .text-container {
+        text-align: justify;
+    }
+    .contact-info-container p {
+        font-size: 1rem;
+    }
+    .nav-links-container ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .project-img {
+        width: 100%;
+    }
 }
